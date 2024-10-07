@@ -1,0 +1,22 @@
+.feature {
+  margin: 5px;
+  padding: 30px;
+  max-width: 80%;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+
+  color: $color-white;
+
+  &:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: $color-dark-green;
+  }
+
+  i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+  }
+}

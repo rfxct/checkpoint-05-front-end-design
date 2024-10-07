@@ -178,3 +178,19 @@ nav {
 
 #depoimentos .hero-section:first-of-type {
   gap: 40px; }
+
+.feature {
+  margin: 5px;
+  padding: 30px;
+  max-width: 80%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  color: #fffdfd; }
+  .feature:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: #37676f; }
+  .feature i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    transition: color 0.3s; }
