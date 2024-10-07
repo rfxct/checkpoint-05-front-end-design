@@ -11,35 +11,34 @@
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba($color-white, 0.1);
   z-index: 10;
-}
 
-.links {
-  font-weight: 300;
-  display: flex;
-  gap: 2rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
+  .links {
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
 
-.nav-item {
-  text-decoration: none;
-  font-weight: 400;
-  color: $color-white;
-  padding: 15px 0px;
-  position: relative;
+    .nav-item {
+      text-decoration: none;
+      font-weight: 400;
+      color: $color-white;
+      padding: 15px 0px;
+      position: relative;
 
-  &:hover::before {
-    width: 100%;
-  }
+      &:hover::before {
+        width: 100%;
+      }
 
-  &::before {
-    transition: 300ms;
-    height: 2px;
-    content: "";
-    position: absolute;
-    background-color: $color-white;
+      &::before {
+        transition: 300ms;
+        height: 2px;
+        content: "";
+        position: absolute;
+        background-color: $color-white;
 
-    width: 0%;
-    bottom: 5px;
+        width: 0%;
+        bottom: 5px;
+      }
+    }
   }
 }
