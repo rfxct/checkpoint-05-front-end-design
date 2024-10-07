@@ -15,7 +15,7 @@
 }
 
 .font-xl {
-  font-size: 4rem;
+  font-size: 4em;
 }
 
 .logo {
@@ -35,4 +35,10 @@
 
 .fa-solid {
   margin: 0 5px;
+}
+
+@media (max-width: 700px) {
+  .font-xl {
+    font-size: 3em;
+  }
 }

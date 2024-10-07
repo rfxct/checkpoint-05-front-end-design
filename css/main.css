@@ -12,7 +12,7 @@
   flex-direction: column; }
 
 .font-xl {
-  font-size: 4rem; }
+  font-size: 4em; }
 
 .logo {
   text-transform: uppercase;
@@ -29,6 +29,10 @@
 .fa-solid {
   margin: 0 5px; }
 
+@media (max-width: 700px) {
+  .font-xl {
+    font-size: 3em; } }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,7 +47,8 @@ body {
   background: linear-gradient(66deg, #0d1a31, rgba(13, 26, 49, 0.35), #37676f);
   background-size: 500%;
   min-height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -63,8 +68,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: fit-content;
-  padding: 3rem;
+  padding: 3em;
   width: 100%;
+  max-width: 100vw;
+  flex-wrap: wrap;
   position: fixed;
   background: transparent;
   backdrop-filter: blur(10px);
@@ -72,8 +79,8 @@ nav {
   z-index: 10; }
   .navbar .links {
     display: flex;
-    gap: 2rem;
-    font-size: 1rem;
+    gap: 2em;
+    font-size: 1em;
     text-transform: uppercase; }
     .navbar .links .nav-item {
       text-decoration: none;
@@ -91,6 +98,10 @@ nav {
         background-color: #fffdfd;
         width: 0%;
         bottom: 5px; }
+
+@media (max-width: 700px) {
+  .navbar .links {
+    gap: 10px; } }
 
 .hero:nth-child(1) {
   min-height: 100vh; }
@@ -111,7 +122,7 @@ nav {
 
 .slogan {
   opacity: 0.75;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   text-transform: lowercase; }
 
 .listen-now {
@@ -131,11 +142,19 @@ nav {
 .description {
   line-height: 1.3;
   opacity: 0.75;
-  font-size: 1.1rem; }
+  font-size: 1.1em;
+  padding: 30px; }
 
 @media (max-width: 700px) {
   .hero {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 100vw;
+    gap: 0;
+    place-items: center; }
+    .hero .hero-section {
+      max-width: 100%;
+      align-items: center; }
+  main {
+    padding-top: 150px; } }
 
 .testimonials {
   display: flex;
@@ -196,16 +215,18 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: fit-content;
-  padding: 3rem;
+  padding: 3em;
   width: 100%;
+  max-width: 100vw;
+  flex-wrap: wrap;
   background: transparent;
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 253, 253, 0.1); }
   .footer .links {
     font-weight: 400;
     display: flex;
-    gap: 2rem;
-    font-size: 1rem;
+    gap: 2em;
+    font-size: 1em;
     text-transform: uppercase; }
     .footer .links a {
       color: #fffdfd; }
@@ -240,3 +261,10 @@ nav {
       .footer .newsletter button:hover {
         cursor: pointer;
         background-color: #0d1a31; }
+
+@media (max-width: 700px) {
+  .footer {
+    gap: 20px;
+    flex-direction: column-reverse; }
+    .footer .links {
+      flex-direction: column; } }
