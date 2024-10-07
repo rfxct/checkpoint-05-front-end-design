@@ -1,0 +1,52 @@
+.hero:nth-child(1) {
+  min-height: 100vh;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 40% auto;
+
+  gap: 60px;
+  padding: 0 60px;
+  flex: 1;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+.slogan {
+  opacity: 0.75;
+  font-size: 1.2rem;
+  text-transform: lowercase;
+}
+
+.listen-now {
+  background-color: $color-dark-green;
+  padding: 10px 40px;
+  border-radius: 20px;
+
+  color: $color-white;
+  width: fit-content;
+  margin-top: 15px;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0px 0px 60px -12px rgba(0, 0, 0, 0.75);
+
+  &:hover {
+    transform: translateX(3px);
+    background-color: $color-dark-blue;
+  }
+}
+
+.description {
+  line-height: 1.3;
+  opacity: 0.75;
+  font-size: 1.1rem;
+}

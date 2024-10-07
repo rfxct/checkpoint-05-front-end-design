@@ -1,0 +1,62 @@
+@import url("https://cdn.jsdelivr.net/npm/helvatica-neue-lt@1.0.1/index.min.css");
+
+@import "variables";
+@import "generics";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  transition: all 0.3s;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(13, 26, 49);
+  color: $color-white;
+  background: linear-gradient(
+    66deg,
+    $color-dark-blue,
+    rgba($color-dark-blue, 0.35),
+    $color-dark-green
+  );
+  background-size: 500%;
+  min-height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+main,
+nav {
+  max-width: 1200px;
+}
+
+@import "navbar";
+@import "hero";
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -4px;
+}
+
+.logo span {
+  font-weight: bold;
+}
